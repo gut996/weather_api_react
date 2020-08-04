@@ -5,8 +5,8 @@ import Form from "./components/Form";
 import Weather from "./components/Weather";
 import Media from "react-media";
 
-const API_KEY = "5c3b454e87502c6a6ad81a8cb9ac78b5";
-// const API_KEY2= "5UjPXAwuvTuhfnRnEeVdAQtKwAdgLg";
+const API_KEY = process.env.REACT_APP_API_KEY;
+// console.log(process.env.REACT_APP_API_KEY);
 
 class App extends React.Component {
   state = {
@@ -33,7 +33,7 @@ class App extends React.Component {
     const data = await api_call.json();
     // const data2 = await api_call2.json();
 
-    // console.log(data2);
+    // console.log(data);
     if (city && country) {
       this.setState({
         temperature: data.main.temp,
