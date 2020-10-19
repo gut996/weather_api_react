@@ -32,7 +32,7 @@ class App extends React.Component {
     const data = await api_call.json();
     // const data2 = await api_call2.json();
 
-    // console.log(data);
+    console.log(data);
     if (city && country) {
       this.setState({
         temperature: data.main.temp,
