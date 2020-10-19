@@ -6,7 +6,6 @@ import Weather from "./components/Weather";
 import Media from "react-media";
 
 const API_KEY = process.env.REACT_APP_API_KEY;
-// console.log(process.env.REACT_APP_API_KEY);
 
 class App extends React.Component {
   state = {
