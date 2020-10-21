@@ -50,7 +50,8 @@ body {
   font-family: "Merriweather", serif;
 }
 .title-container-button_link{
-  color: #000 !important;
+  color: red !important;
+  font-weight: bold;
 }
 .form-container {
   background-color: #2c3e50;
